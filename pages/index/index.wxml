@@ -5,22 +5,27 @@
     <template is="index_index_scroll_tmpl" data="{{...index_index_scroll_tmpl}}" />
   </view>
 
-  <view class="text">
-    <view class="line_y"></view>
-    <text  class="primary-color">经营范围</text>
+  <view class="title">
+    <text class="primary-color  font_36">经营范围</text>
   </view>
   <view class="section index-nav">
     <template is="index_index_navs_tmpl" data="{{...index_index_navs_tmpl}}" />
   </view>
 
-  <view class="text">
-    <view class="line_y"></view>
-    <text class="primary-color">店长推荐</text>
+  <view class="title">
+    <text class="primary-color font_36">店长推荐</text>
   </view>
   <view class="nr11">
-    <image src="/image/a1.jpg"></image>
+    <image src="../../comment/img/tree1.jpg" background-size="conver"></image>
   </view>
   <view class="nr11">
+    <image src="../../comment/img/tree2.jpg"></image>
+  </view>
+  <view class="nr11">
+    <image src="../../comment/img/tree3.jpg"></image>
+  </view>
+  <view class="nr11">
+    
     <image src="/image/a2.jpg"></image>
   </view>
   <view class="nr11">
@@ -28,7 +33,7 @@
   </view>
   <view class="nr11">
     <image src="/image/a2.jpg"></image>
-  </view>  
+  </view>
 
 </view>
 <button type="default" bindtap="calling">点击拨打店家电话</button>

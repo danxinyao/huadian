@@ -7,12 +7,13 @@ Page( {
     // 轮播
     index_index_scroll_tmpl: {
       images: [
+        '/comment/img/l1.jpg',
+        '/comment/img/l2.jpg',
+        '/comment/img/l3.jpg',         
+        '/comment/img/l4.jpg',         
        '/image/2.jpg',
        '/image/1.jpg',
-       '/image/3.jpg',
-        '/image/2.jpg',
-        '/image/1.jpg',
-        '/image/3.jpg',       
+       '/image/3.jpg',      
       ],
       indicatorDots: true,
       vertical: false,
@@ -31,13 +32,13 @@ Page( {
           text: '鲜花'
         }, {
           image: '/image/i2.png',
-          text: '新疆特产'
+          text: '鲜花树'
         }, {
           image: '/image/i3.png',
-          text: '新鲜蔬菜'
+          text: '花朵'
         }, {
           image: '/image/i4.png',
-          text: '本地特产'
+          text: '结婚'
         }
       ]
     },
