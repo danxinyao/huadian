@@ -7,12 +7,12 @@ Page( {
     // 轮播
     index_index_scroll_tmpl: {
       images: [
+        '/image/1.jpg',
         '/comment/img/l1.jpg',
         '/comment/img/l2.jpg',
         '/comment/img/l3.jpg',         
         '/comment/img/l4.jpg',         
        '/image/2.jpg',
-       '/image/1.jpg',
        '/image/3.jpg',      
       ],
       indicatorDots: true,
@@ -47,7 +47,7 @@ Page( {
 
   calling: function () {
     wx.makePhoneCall({
-      phoneNumber: '13213754205',
+      phoneNumber: '15670215100',
       success: function () {
         console.log("拨打电话成功！")
       },

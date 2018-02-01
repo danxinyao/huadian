@@ -61,3 +61,10 @@ page {
 .font_36 {
   font-size: 36rpx;
 }
+.call {
+  margin: 30rpx 0;
+  padding: 30rpx;
+  background: #fd3d6b;
+  color: #fff;
+  text-align: center;
+}

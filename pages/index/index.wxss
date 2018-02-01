@@ -5,7 +5,7 @@
 /*轮播*/
 .swiper_box {
   /*width: 100%;*/
-  height: 600rpx;
+  height: 450rpx;
 }
 swiper.swiper {
   height: 100%;
@@ -82,7 +82,9 @@ view.text text {
 }
 .nr11 {
   width: 100%;
-  height: 600rpx;
+  margin: 20rpx 0;
+  overflow: hidden;
+  //height: 450rpx;
 }
 .nr11 image{
   width: 100%;

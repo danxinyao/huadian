@@ -16,7 +16,10 @@
     <text class="primary-color font_36">店长推荐</text>
   </view>
   <view class="nr11">
-    <image src="../../comment/img/tree1.jpg" background-size="conver"></image>
+    <image src="/image/a1.jpg"></image>
+  </view>  
+  <view class="nr11">
+    <image src="../../comment/img/tree1.jpg"></image>
   </view>
   <view class="nr11">
     <image src="../../comment/img/tree2.jpg"></image>
@@ -25,15 +28,11 @@
     <image src="../../comment/img/tree3.jpg"></image>
   </view>
   <view class="nr11">
-    
     <image src="/image/a2.jpg"></image>
-  </view>
-  <view class="nr11">
-    <image src="/image/a1.jpg"></image>
   </view>
   <view class="nr11">
     <image src="/image/a2.jpg"></image>
   </view>
 
 </view>
-<button type="default" bindtap="calling">点击拨打店家电话</button>
+<view type="default" class="call" bindtap="calling">点击拨打店家电话</view>
