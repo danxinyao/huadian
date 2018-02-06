@@ -55,10 +55,9 @@ view.text2 {
   justify-content: center;
 }
 .gy image{
-  width: 300rpx;
-  height: 300rpx;
-  border-radius: 100%;
-  border: 5rpx solid #fd3d6b;
+  width: 450rpx;
+  height: 450rpx;
+  /* border-radius: 100%; */
 }
 .gy1 image{
   width: 750rpx;

@@ -10,10 +10,11 @@
    九重鲜花店，是由水果进口商直销原装水果，专营进口高档水果，兼营国产优质水果。精选全球鲜果美食，主营各类水果产品，包括进口鲜果和国内优质鲜果。水果先生的愿望是，让客户享受到真正健康、美味的世界鲜果和管家式体贴放心的服务；为消费者提供健康、绿色、优质的鲜果产品和个性化鲜果服务，倡导轻食健康生活理念。
 店铺地址：九重镇腾飞二店
 派送电话：13213754205
+QQ: 1299754315
 </text>
 </view>
 
 <view class="gy">
-  <image  src="/comment/img/code.png"></image>
+  <image  src="/comment/img/code.jpg"></image>
 </view>
 <view  class="call" bindtap="calling">点击拨打资讯电话</view>

@@ -8,7 +8,7 @@ Page({
   },
   calling: function () {
     wx.makePhoneCall({
-      phoneNumber: '4000000000',
+      phoneNumber: '15670215100',
       success: function () {
         console.log("拨打电话成功！")
       },

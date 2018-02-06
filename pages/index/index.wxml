@@ -22,17 +22,7 @@
     <image src="../../comment/img/tree1.jpg"></image>
   </view>
   <view class="nr11">
-    <image src="../../comment/img/tree2.jpg"></image>
-  </view>
-  <view class="nr11">
-    <image src="../../comment/img/tree3.jpg"></image>
-  </view>
-  <view class="nr11">
     <image src="/image/a2.jpg"></image>
   </view>
-  <view class="nr11">
-    <image src="/image/a2.jpg"></image>
-  </view>
-
 </view>
 <view type="default" class="call" bindtap="calling">点击拨打店家电话</view>

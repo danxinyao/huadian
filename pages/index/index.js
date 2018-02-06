@@ -7,11 +7,9 @@ Page( {
     // 轮播
     index_index_scroll_tmpl: {
       images: [
-        '/image/1.jpg',
         '/comment/img/l1.jpg',
-        '/comment/img/l2.jpg',
-        '/comment/img/l3.jpg',         
-        '/comment/img/l4.jpg',         
+        '/image/1.jpg',
+        '/comment/img/l2.jpg',       
        '/image/2.jpg',
        '/image/3.jpg',      
       ],
