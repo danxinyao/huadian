@@ -2,7 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/list/index",
-    "pages/i/index",
+    "pages/userCenter/index",
     "pages/logs/logs"
   ],
   "window": {
@@ -33,7 +33,7 @@
       },
     
       {
-        "pagePath": "pages/i/index",
+        "pagePath": "pages/userCenter/index",
         "iconPath": "image/userCenter-icon.png",
         "selectedIconPath": "image/userCenter-selected-icon.png",
         "text": "联系我们"
