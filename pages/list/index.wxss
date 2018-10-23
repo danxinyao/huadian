@@ -1,11 +1,14 @@
 .container {
-  padding: 8px 0;
+  padding: 10rpx;
 }
-.container image {
+.img_box {
+  margin: 15rpx 0;
+  padding: 20rpx;
+}
+.img_box image {
   display: block;
   ime-mode: widthFix;
-  width: 750rpx;
-  height: 600rpx;
+  width: 100%;
 }
 .item {
   padding: 8px;
@@ -55,4 +58,12 @@ text {
 view.text text {
   margin-left: 10px;
   line-height: 18px;
+}
+.top {
+  padding-top: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: yellowgreen;
 }

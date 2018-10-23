@@ -1,30 +1,44 @@
+var util = require('../../utils/util.js')
 Page({
   data: {
     title: '',
+    lists: []
     //向模板传入数据
-    list_index_items_tmpl: {
-      items: [{"mprice":0,"maxpacks":100,"price":12800,"subcate":210,"remains":998,"type":1,"freight":0,"title":"V7702","imgs":["../../image/V7702.jpg"],"unit":"只","id":302,"quantity":"1"},{"mprice":0,"maxpacks":14,"price":1600,"subcate":410,"remains":14,"type":4,"freight":1000,"title":"红糖粉","imgs":["https://81.jpg"],"unit":"g","id":93,"quantity":"400"},{"mprice":0,"maxpacks":100,"price":4800,"subcate":202,"remains":5,"type":1,"freight":1000,"title":"极致Q弹肉丸子","imgs":["https:/fe3.png"],"unit":"g","id":69,"quantity":"300"}]
-    }
   },
-  calling: function () {
+  calling: function() {
     wx.makePhoneCall({
       phoneNumber: '15670215100',
-      success: function () {
+      success: function() {
         console.log("拨打电话成功！")
       },
-      fail: function () {
+      fail: function() {
         console.log("拨打电话失败！")
       }
     })
   },
 
   //事件处理函数
-  onLoad: function (options) {
-    this.title = options.type || '全部商品'
+  onLoad: function(options) {
+    var that = this
+    this.title = options.type || '鲜花列表'
+    that.setData({
+      lists: util.lists
+    })
   },
-  onReady: function () {
+  onReady: function() {
     wx.setNavigationBarTitle({
       title: this.title
     })
   },
+  onShareAppMessage: function() {
+    return {
+      title: '渠首芳韵花艺',
+      desc: '鲜花的领跑者!',
+      imageUrl: 'http://b307.photo.store.qq.com/psb?/7c2813a2-4828-443c-8bed-e3430af2b340/*uBeHgh8LnUVaT4mHSlZgCxU9QyTjgRt0NiSCCKz74c!/b/dDMBAAAAAAAA&bo=ygHKAQAAAAARFyA!&rf=viewer_4',
+      path: '/pages/index/index?id=123'
+    }
+  },
+  onPullDownRefresh: function() {
+    wx.stopPullDownRefresh();
+  }
 })

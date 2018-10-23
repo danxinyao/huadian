@@ -8,7 +8,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "九重鲜花店--腾飞二店",
+    "navigationBarTitleText": "渠首芳韵花艺",
     "navigationBarBackgroundColor": "#000",
     "backgroundColor": "#fbf9fe",
     "enablePullDownRefresh": true
@@ -27,15 +27,15 @@
       },
       {
         "pagePath": "pages/list/index",
-        "iconPath": "image/icon_API.png",
-        "selectedIconPath": "image/icon_API_HL.png",
-        "text": "全部商品"
+        "iconPath": "image/list-icon.png",
+        "selectedIconPath": "image/list-selected-icon.png",
+        "text": "鲜花列表"
       },
     
       {
         "pagePath": "pages/i/index",
-        "iconPath": "image/icon_API.png",
-        "selectedIconPath": "image/icon_API_HL.png",
+        "iconPath": "image/userCenter-icon.png",
+        "selectedIconPath": "image/userCenter-selected-icon.png",
         "text": "联系我们"
       }
     ]
