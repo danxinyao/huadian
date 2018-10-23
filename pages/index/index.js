@@ -18,39 +18,43 @@ Page({
     lists: [],
     //向模板传入数据
     // 轮播
-    index_index_scroll_tmpl: {
-      images: [
-        '/comment/img/l1.jpg',
-        '/image/1.jpg',
-        '/comment/img/l2.jpg',
-        '/image/2.jpg',
-        '/image/3.jpg',
-      ],
-      indicatorDots: true,
-      vertical: false,
-      autoplay: true,
-      interval: 3000,
-      duration: 1200
-    },
-
-
-
-    // nav
-    index_index_navs_tmpl: {
-      navs: [{
-        image: '/image/i1.png',
-        text: '鲜花'
-      }, {
-        image: '/image/i2.png',
-        text: '鲜花树'
-      }, {
-        image: '/image/i3.png',
-        text: '花朵'
-      }, {
-        image: '/image/i4.png',
-        text: '结婚'
-      }]
-    },
+    index_index_scroll_tmpl: {},
+    markers: [{
+      //iconPath: "/image/list-selected-icon.png",
+      id: 0,
+      latitude: 32.699800,
+      longitude: 111.796982,
+      width: 20,
+      height: 20,
+      // label: {
+      //   content: '渠首芳韵花艺',
+      //   color: '#FD3D6B',
+      //   fontSize: 14,
+      //   borderRadius: 5,
+      //   borderColor: '#ccc',
+      //   padding: 10,
+      //   textAlign: 'center',
+      // },
+      callout: {
+        content:'渠首芳韵花艺',
+        color: '#FD3D6B',
+        fontSize: 16,
+        borderRadius: 5,
+        borderColor: '#ccc',
+        display: 'ALWAYS',
+        textAlign: 'center',
+      }
+    }],
+    controls: [{
+      id: 1,
+      position: {
+        left: 0,
+        top: 300 - 50,
+        width: 50,
+        height: 50
+      },
+      clickable: true
+    }]
   },
 
 
@@ -91,12 +95,12 @@ Page({
       index_index_scroll_tmpl: obj
     })
     //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo) {
-      //更新数据
-      that.setData({
-        userInfo: userInfo,
-      })
-    })
+    // app.getUserInfo(function(userInfo) {
+    //   //更新数据
+    //   that.setData({
+    //     userInfo: userInfo,
+    //   })
+    // })
   },
 
   onShareAppMessage: function() {
@@ -115,6 +119,6 @@ Page({
   },
   onPullDownRefresh: function() {
     wx.stopPullDownRefresh();
-  }
+  },
 
 })
