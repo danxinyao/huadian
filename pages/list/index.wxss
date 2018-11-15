@@ -2,13 +2,26 @@
   padding: 10rpx;
 }
 .img_box {
-  margin: 15rpx 0;
+  margin: 5rpx 0;
   padding: 20rpx;
 }
 .img_box image {
   display: block;
-  ime-mode: widthFix;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+.text_box {
+  padding: 0 20rpx;
+}
+.name {
+   font-size: 36rpx;
+   padding: 15rpx 5rpx;
+}
+.des {
+  color: #999;
+  font-size: 32rpx;
+  font-weight: 100;
+  text-indent: 2em;
 }
 .item {
   padding: 8px;

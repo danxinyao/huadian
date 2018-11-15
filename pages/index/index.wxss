@@ -140,3 +140,7 @@ view.text text {
   background-color:#F5F5F5;
   padding: 25rpx;
 }
+.map {
+  height: 500rpx;
+  width: 100%;
+}

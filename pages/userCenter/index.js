@@ -30,6 +30,10 @@ Page({
     //   })
     // })
   },
+  onReady() {
+    this.videoContext = wx.createVideoContext('myVideo')
+  },
+
   onShareAppMessage: function() {
     return {
       title: '渠首芳韵花艺',
@@ -42,8 +46,12 @@ Page({
     wx.stopPullDownRefresh();
   },
   save: function () {
-    wx.saveImageToPhotosAlbum({
-      success(res) { }
+    wx.previewImage({
+      current: 'http://b338.photo.store.qq.com/psb?/V139cQJB0axwVi/k0N2WPlFpLyOcwxoqIB5qhqbCmR9IC4DbHhkJM5n6AM!/b/dFIBAAAAAAAA&bo=rgGuAQAAAAAAACY!&rf=viewer_311', // 当前显示图片的http链接
+      urls: ['http://b338.photo.store.qq.com/psb?/V139cQJB0axwVi/k0N2WPlFpLyOcwxoqIB5qhqbCmR9IC4DbHhkJM5n6AM!/b/dFIBAAAAAAAA&bo=rgGuAQAAAAAAACY!&rf=viewer_311','http://b338.photo.store.qq.com/psb?/V139cQJB0axwVi/rhSWpKHuGOKxumWJv29XG.O4hI4fZOy2ZA12eIGxdxc!/b/dFIBAAAAAAAA&bo=rgGuAQAAAAAAACY!&rf=viewer_311'] // 需要预览的图片http链接列表
     })
+    // wx.saveImageToPhotosAlbum({
+    //   success(res) { }
+    // })
   }
 })

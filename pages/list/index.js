@@ -40,5 +40,11 @@ Page({
   },
   onPullDownRefresh: function() {
     wx.stopPullDownRefresh();
+  },
+  showBigBox: function (e) {
+    //console.log(e.currentTarget.dataset.url)
+    wx.previewImage({
+      urls: [e.currentTarget.dataset.url] // 需要预览的图片http链接列表
+    })
   }
 })

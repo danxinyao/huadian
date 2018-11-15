@@ -4,6 +4,7 @@ var util = require('../../utils/util.js')
 let index_index_scroll_tmpl = {
   images: [
     '/comment/img/l1.jpg',
+    'http://b305.photo.store.qq.com/psb?/V139cQJB0axwVi/1Xkx.CQHEjSl*ala6OlG3zU3vFBZrHCO7PJlF87fRjg!/b/dDEBAAAAAAAA&bo=gAeAAwAAAAAAACI!&rf=viewer_311',
     '/comment/img/l2.jpg',
   ],
   indicatorDots: true,
@@ -36,7 +37,7 @@ Page({
       //   textAlign: 'center',
       // },
       callout: {
-        content:'渠首芳韵花艺',
+        content: '渠首芳韵花艺',
         color: '#FD3D6B',
         fontSize: 16,
         borderRadius: 5,
@@ -56,7 +57,6 @@ Page({
       clickable: true
     }]
   },
-
 
   calling: function() {
     wx.makePhoneCall({
@@ -86,7 +86,7 @@ Page({
     var that = this
     let obj = index_index_scroll_tmpl;
     util.lists.forEach((item, index) => {
-      if (index > 3) {
+      if (index > 3 && index < 8) {
         obj.images.push(item.url)
       }
     })
@@ -120,5 +120,10 @@ Page({
   onPullDownRefresh: function() {
     wx.stopPullDownRefresh();
   },
-
+  showBigBox: function(e) {
+    //console.log(e.currentTarget.dataset.url)
+    wx.previewImage({
+      urls: [e.currentTarget.dataset.url] // 需要预览的图片http链接列表
+    })
+  }
 })

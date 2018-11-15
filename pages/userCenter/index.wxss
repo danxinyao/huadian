@@ -2,6 +2,9 @@
 .container {
   padding-top: 30px;
 }
+#myVideo {
+  width: 100%;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
