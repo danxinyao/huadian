@@ -12,7 +12,7 @@
     <template is="index_index_navs_tmpl" data="{{...index_index_navs_tmpl}}" />
   </view> -->
   <view class="title">
-    <text class="primary-color font_36">店长推荐</text>
+    <text class="primary-color font_36">欢庆七夕佳节</text>
   </view>
   <view class="img_boxs">
     <view class="img_box" wx:key="{{item.name}}" wx:for="{{lists}}">
@@ -33,7 +33,7 @@
 <view type="default" class="call" bindtap="calling">点击拨打店家电话</view>
 <view class="bottom_view">
   <view>
-    <text>广州夏雪网络科技有限公司版权所有</text>
+    <text>郑州简创网络科技有限公司版权所有</text>
   </view>
   <view>
     <text>推广热线：17638980599</text>

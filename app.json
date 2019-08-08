@@ -31,7 +31,6 @@
         "selectedIconPath": "image/list-selected-icon.png",
         "text": "鲜花列表"
       },
-    
       {
         "pagePath": "pages/userCenter/index",
         "iconPath": "image/userCenter-icon.png",
@@ -46,5 +45,6 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }
