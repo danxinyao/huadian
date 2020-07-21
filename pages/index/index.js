@@ -58,13 +58,13 @@ Page({
     }]
   },
 
-  calling: function() {
+  calling: function () {
     wx.makePhoneCall({
       phoneNumber: '15670215100',
-      success: function() {
+      success: function () {
         console.log("拨打电话成功！")
       },
-      fail: function() {
+      fail: function () {
         console.log("拨打电话失败！")
       }
     })
@@ -72,17 +72,17 @@ Page({
 
 
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-  swiperchange: function(e) {
+  swiperchange: function (e) {
     //FIXME: 当前页码
     //console.log(e.detail.current)
   },
 
-  onLoad: function() {
+  onLoad: function () {
     var that = this
     let obj = index_index_scroll_tmpl;
     util.lists.forEach((item, index) => {
@@ -94,6 +94,7 @@ Page({
       lists: util.lists,
       index_index_scroll_tmpl: obj
     })
+    that.getData();
     //调用应用实例的方法获取全局数据
     // app.getUserInfo(function(userInfo) {
     //   //更新数据
@@ -102,8 +103,35 @@ Page({
     //   })
     // })
   },
-
-  onShareAppMessage: function() {
+  getData: function () {
+    let that = this;
+    wx.request({
+      url: 'http://api.sdhongrong.com/api/HomePage/QueryAdvertisings?positionType=1',
+      //data: params,
+      header: {
+        'content-type': 'application/json'
+      },
+      method: 'get',
+      success: function (res) {
+        let data = res.data.data;
+        let list = util.lists;
+        if(data && data.length) {
+          data.forEach(item => {
+            let obj = {
+              name: item.name,
+              url: item.imageUrl,
+              des: item.url
+            }
+            list.push(obj)
+          })
+        }
+        that.setData({
+          lists: list,
+        })
+      },
+    });
+  },
+  onShareAppMessage: function () {
     return {
       title: '渠首芳韵花艺',
       desc: '鲜花的领跑者!',
@@ -112,15 +140,15 @@ Page({
     }
   },
 
-  go: function(event) {
+  go: function (event) {
     wx.navigateTo({
       url: '../list/index?type=' + event.currentTarget.dataset.type
     })
   },
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
     wx.stopPullDownRefresh();
   },
-  showBigBox: function(e) {
+  showBigBox: function (e) {
     //console.log(e.currentTarget.dataset.url)
     wx.previewImage({
       urls: [e.currentTarget.dataset.url] // 需要预览的图片http链接列表

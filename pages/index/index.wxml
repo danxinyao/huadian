@@ -12,7 +12,7 @@
     <template is="index_index_navs_tmpl" data="{{...index_index_navs_tmpl}}" />
   </view> -->
   <view class="title">
-    <text class="primary-color font_36">春暖花开 万物复苏</text>
+    <text class="primary-color font_36">春暖花开 情人节快乐</text>
   </view>
   <view class="img_boxs">
     <view class="img_box" wx:key="{{item.name}}" wx:for="{{lists}}">
